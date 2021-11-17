@@ -1,0 +1,134 @@
+section {
+  padding: 50px 0;
+  position: relative;
+}
+
+.tabsMenuList {
+  flex-direction: column;
+  border: none;
+}
+
+.tabsMenuList li {
+  width: 100%;
+}
+
+.tabsMenuList li button {
+  width: 100%;
+  margin-bottom: 0 !important;
+  border: none;
+  border-radius: 10px !important;
+  padding: 20px;
+  text-align: left;
+}
+
+.tabsMenuList li button.active {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border: none;
+}
+
+.tabsMenuList li button:focus,
+.tabsMenuList li button:hover {
+  border: none;
+  border-color: transparent !important;
+}
+.product-img {
+  text-align: center;
+}
+.product-img img {
+  width: 60%;
+}
+
+.tab-content,
+.tab-pane,
+.tab-right {
+  height: 100%;
+  width: 100%;
+}
+
+.tab-right {
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.tab-right img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.tab-right p {
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.animatedImg {
+  animation: ImageAnimated 2s infinite;
+  text-align: center;
+}
+
+@keyframes ImageAnimated {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.circle {
+  background: linear-gradient(
+    128deg,
+    rgba(37, 169, 225, 1) 0%,
+    rgba(42, 57, 138, 1) 100%
+  );
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+#circle-one {
+  height: 90px;
+  width: 90px;
+}
+
+#circle-two {
+  height: 70px;
+  width: 70px;
+}
+
+#circle-three {
+  height: 50px;
+  width: 50px;
+}
+
+.tab-product #circle-one {
+  right: -30px;
+}
+
+.tab-product #circle-three {
+  left: -10px;
+  top: 40%;
+}
+
+.practiceSection #circle-one {
+  right: -15px;
+  top: 20%;
+}
+
+.practiceSection #circle-two {
+  left: -10px;
+  top: 50%;
+}
+
+.practiceSection #circle-three {
+  top: 90%;
+  right: 45px;
+}
